@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    padding: 20px;
+    background-color: #e8eff1;
+    color: #333;
+    text-align: center;
+}
+
+input, button {
+    margin: 20px 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+table {
+    width: 100%; /* Asegura que la tabla use todo el ancho disponible */
+    border-collapse: collapse; /* Opcional: para un diseño más compacto */
+}
+
+th, td {
+    border: 1px solid black; /* Opcional: añade bordes para definir claramente cada celda */
+    padding: 8px; /* Opcional: añade padding para hacer que el contenido de la celda sea más legible */
+    text-align: center; /* Alinea el texto al centro de la celda */
+}
+
+th.linea, td.linea {
+    width: 50px; /* Establece un ancho fijo para las columnas de "Línea" */
+    max-width: 50px; /* Opcional: garantiza que la columna no se expanda más de 50px */
+    white-space: nowrap; /* Evita que el contenido de la celda se divida en varias líneas */
+}
+
+th.corregido {
+    width: 70px;
+}
+
+th {
+    text-align: center;
+    background-color: #f2f2f2; /* Añade un color de fondo para destacar los encabezados */
+}
+
+input[type="checkbox"] {
+    transform: scale(2); /* Aumenta el tamaño del checkbox en un 50% */
+    margin: 5px; /* Añade un poco de espacio alrededor del checkbox para que no esté tan apretado */
+}
