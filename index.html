@@ -7,10 +7,43 @@
 </head>
 <body>
     <h1>Verificador de coincidencias en Excel</h1>
+
+    <!-- Campo para cargar el Excel de MercadoLibre -->
+    <label for="file1">Cargar Excel de MercadoLibre:</label>
     <input type="file" id="file1" accept=".xlsx, .xls">
+    <br>
+
+    <!-- Campo para cargar el Excel de Eliezer -->
+    <label for="file2">Cargar Excel de Eliezer:</label>
     <input type="file" id="file2" accept=".xlsx, .xls">
+    <br>
+
     <button onclick="verifyFiles()">Verificar</button>
-    <div id="results"></div>
+    <div id="results">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">En Excel MercadoLibre</th>
+                    <th colspan="3">En Excel Eliezer</th>
+                </tr>
+                <tr>
+                    <th>Código SKU</th>
+                    <th class="linea">Línea</th>
+                    <th class="corregido">Corregido</th>  <!-- Checkbox para Excel MercadoLibre -->
+                    <th>Código SKU</th>
+                    <th class="linea">Línea</th>
+                    <th class="corregido">Corregido</th>  <!-- Checkbox para Excel Eliezer -->
+                </tr>
+            </thead>
+            <tbody id="resultsBody">
+                <!-- Los resultados se insertarán dinámicamente aquí -->
+            </tbody>
+        </table>
+        
+        
+        
+        
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <script src="script.js"></script>
