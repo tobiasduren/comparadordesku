@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Excel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Verificador de coincidencias en Excel</h1>
+    <input type="file" id="file1" accept=".xlsx, .xls">
+    <input type="file" id="file2" accept=".xlsx, .xls">
+    <button onclick="verifyFiles()">Verificar</button>
+    <div id="results"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
