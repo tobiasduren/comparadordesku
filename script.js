@@ -3,7 +3,7 @@ function verifyFiles() {
     const file2 = document.getElementById('file2').files[0];
 
     if (!file1 || !file2) {
-        document.getElementById('resultsBody').innerHTML = '<tr><td colspan="2">Por favor, carga ambos archivos.</td></tr>';
+        document.getElementById('resultsBody').innerHTML = '<tr><td colspan="6">Por favor, carga ambos archivos.</td></tr>';
         return;
     }
 
